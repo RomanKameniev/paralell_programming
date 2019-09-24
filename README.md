@@ -1,6 +1,6 @@
 # paralell_programming
-<head>
     <title>C VS Go in parallel programming </title>
+<head>
     
     code was created in VS code 
     
