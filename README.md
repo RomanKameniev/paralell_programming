@@ -14,24 +14,28 @@ Go Program compilled by using golang compiller
 
 <h3>```sequential```</h3>
 
-result of 100 test for `windows`
+result of 100 test for `windows`:
+    <br/>
     go lang avg 10.60(s) 
     <br/>
     c lang min avg 19.21(s)
     
-result of 100 test for `linux`
+result of 100 test for `linux`:
+    <br/>
     go lang min avg 27.38(s)
     <br/>
     c lang  min avg 16.006(s)
 
 <h3>```parallel```</h3>
 
-result of 100 test for `windows`
+result of 100 test for `windows`:
+    <br/>
     go lang min avg 2.15(s)
     <br/>
     c lang min avg 4.33
     
-result of 100 test for `linux`
+result of 100 test for `linux`:
+    <br/>
     go lang min avg 10.33(s)
     <br/>
     c lang min avg 6.65(s)
