@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+func elapsed(what string) func() {
+	start := time.Now()
+	return func() {
+		fmt.Printf("%s took %v\n", what, time.Since(start))
+	}
+}
 
 func main() {
-	fmt.Printf("hello, world\n")
+	defer elapsed("page")()
+	time.Sleep(time.Second * 2)
 }
