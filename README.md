@@ -3,11 +3,13 @@
     <h1>C VS Go in parallel programming </h1>
 </head>
 <body>
-    code was created in VS code 
+    <h4> code was created in VS code </h4>
+    <br/>
     tested on Intel Xeon W3580 @ 3.33GHz (Windows) &&  Intel I7 7500U @ 2.70GHz (Linux)
-
+<br/>
 
 C Program compilled by using gcc compiller ( for windows with MinGW gcc)
+<br/>
 Go Program compilled by using golang compiller
 
 ```sequential```
