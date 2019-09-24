@@ -4,7 +4,7 @@
 </head>
 <body>
     <h4> code was created in VS code </h4>
-    <h2> Here I want to show how the processor and the operating system affect the speed of parallel and sequential algorithms</>
+    <h2> Here I want to show how the processor and the operating system affect the speed of parallel and sequential algorithms</h2>
         For testing, I chose the matrix multiplication algorithm
     <br/>
     tested on Intel Xeon W3580 @ 3.33GHz (Windows) &&  Intel I7 7500U @ 2.70GHz (Linux)
