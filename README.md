@@ -12,7 +12,7 @@ C Program compilled by using gcc compiller ( for windows with MinGW gcc)
 <br/>
 Go Program compilled by using golang compiller
 
-```sequential```
+<h3>```sequential```</h3>
 
 result of 100 test for `windows`
     go lang avg 10.60(s) \n
@@ -22,7 +22,7 @@ result of 100 test for `linux`
     go lang min avg 27.38(s)
     c lang  min avg 16.006(s)
 
-```parallel```
+<h3>```parallel```</h3>
 
 result of 100 test for `windows`
     go lang min avg 2.15(s)
