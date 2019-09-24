@@ -1,9 +1,14 @@
 # paralell_programming
-C VS Go in parallel programming
+<head>
+    <title>C VS Go in parallel programming </title>
+    
+    code was created in VS code 
+    
+    tested on Intel Xeon W3580 @ 3.33GHz (Windows) &&  Intel I7 7500U @ 2.70GHz (Linux)
 
-code was created in VS code 
+</head>
 
-tested on Intel Xeon W3580 @ 3.33GHz (Windows) &&  Intel I7 7500U @ 2.70GHz (Linux)
+
 
 C Program compilled by using gcc compiller ( for windows with MinGW gcc)
 Go Program compilled by using golang compiller
