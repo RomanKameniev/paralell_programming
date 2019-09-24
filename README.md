@@ -1,13 +1,10 @@
 # paralell_programming
-    <title>C VS Go in parallel programming </title>
 <head>
-    
-    code was created in VS code 
-    
-    tested on Intel Xeon W3580 @ 3.33GHz (Windows) &&  Intel I7 7500U @ 2.70GHz (Linux)
-
+    C VS Go in parallel programming 
 </head>
-
+<body>
+    code was created in VS code 
+    tested on Intel Xeon W3580 @ 3.33GHz (Windows) &&  Intel I7 7500U @ 2.70GHz (Linux)
 
 
 C Program compilled by using gcc compiller ( for windows with MinGW gcc)
@@ -32,3 +29,4 @@ result of 100 test for `windows`
 result of 100 test for `linux`
     go lang min avg 10.33(s)
     c lang min avg 6.65(s)
+</body>
