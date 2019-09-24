@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdint.h>
-#define MAX 2048 
+//#define MAX 2048 
+
+#define MAX 1024 
 #define RAND_KEY 100
 //comand for parralel compile - >gcc -Wall -Wextra -fopenmp
 clock_t start, finish;
@@ -26,10 +28,9 @@ int64_t power(int64_t a, int64_t b)
     return a * b;
 }
 
-time_t calculate()
+double calculate()
 {
     start = clock();
-   // omp_set_num_threads(4);
     #pragma omp parallel
     {
         int i, j, k;
@@ -48,7 +49,7 @@ time_t calculate()
         }
     }
     finish = clock();
-    return finish - start;
+    return (double)(finish - start) / CLOCKS_PER_SEC;
 }
 int main()
 {
@@ -60,8 +61,8 @@ int main()
         generateArr(a);
         generateArr(b);
         printf("calculating arr\n");
-        time_t calc = calculate();
-        printf("time of %d iteration is = %lg \n test item of arr=> %I64d \n", i, (double)calc / CLOCKS_PER_SEC, c[0][0]);
+        double calc = calculate();
+        printf("time of %d iteration is = %f \n test item of arr=> %I64ld \n", i, calc, c[0][0]);
     }
     int key;
     printf("End \n");

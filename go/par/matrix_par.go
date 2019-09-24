@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-const MAX int = 2048
+const MAX int = 1024
 const RAND int64 = 100
 
 func main() {

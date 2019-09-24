@@ -26,7 +26,7 @@ int64_t power(int64_t a, int64_t b)
     return a * b;
 }
 
-time_t calculate()
+double calculate()
 {
     start = clock();
     for (int i = 0; i < MAX; i++)
@@ -42,7 +42,7 @@ time_t calculate()
         }
     }
     finish = clock();
-    return finish - start;
+    return (double) (finish - start)/ CLOCKS_PER_SEC;
 }
 int main()
 {
@@ -54,9 +54,9 @@ int main()
         generateArr(a);
         generateArr(b);
         printf("calculating arr\n");
-        time_t calc = calculate();
-        printf("time of %d iteration is = %lg \n test item of arr=> %d \n", i, (double)calc / CLOCKS_PER_SEC, c[0][0]);
-    }
+           double calc = calculate();
+        printf("time of %d iteration is = %f \n test item of arr=> %I64ld \n", i, calc, c[0][0]);
+  }
     int key;
     printf("End \n");
     scanf("%d", &key);
