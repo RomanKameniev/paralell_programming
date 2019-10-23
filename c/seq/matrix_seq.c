@@ -33,12 +33,10 @@ double calculate_ijk()
     {
         for (int j = 0; j < MAX; j++)
         {
-            int64_t temp = 0;
             for (int k = 0; k < MAX; k++)
             {
-                temp += power(a[i][k], b[k][j]);
+                c[i][j] += power(a[i][k], b[k][j]);
             }
-            c[i][j] = temp;
         }
     }
 
@@ -53,12 +51,10 @@ double calculate_jik()
     {
         for (int i = 0; i < MAX; i++)
         {
-            int64_t temp = 0;
             for (int k = 0; k < MAX; k++)
             {
-                temp += power(a[i][k], b[k][j]);
+                c[i][j] += power(a[i][k], b[k][j]);
             }
-            c[i][j] = temp;
         }
     }
 
@@ -74,12 +70,10 @@ double calculate_kji()
     {
         for (j = 0; j < MAX; j++)
         {
-            int64_t temp = 0;
             for (i = 0; i < MAX; i++)
             {
-                temp += power(a[i][k], b[k][j]);
+                c[i][j] += power(a[i][k], b[k][j]);
             }
-            c[i][j] = temp;
         }
     }
 
