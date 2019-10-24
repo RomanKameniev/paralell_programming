@@ -108,7 +108,7 @@ int main()
         printf(" jki seq reverse => time of %d iteration is = %lg \n test item of arr=> %I64ld \n", i, jik_time, c[0][0]);
         emptyArr(c);
         double kji_time = calculate_kji();
-        printf(" jki seq reverse => time of %d iteration is = %lg \n test item of arr=> %I64ld \n", i, kji_time, c[0][0]);
+        printf(" kji seq reverse => time of %d iteration is = %lg \n test item of arr=> %I64ld \n", i, kji_time, c[0][0]);
     }
     int key;
     printf("End \n");
