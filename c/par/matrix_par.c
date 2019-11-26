@@ -63,11 +63,13 @@ double calculate_jik()
         {
             for (i = 0; i < MAX; i++)
             {
-                int64_t temp = 0;
+                int64_t temp = 0;//[j][i]
                 for (k = 0; k < MAX; k++)
-                {
+                {//temp * a[j][k]
                     temp += power(a[i][k], b[k][j]);
+                //c[j][k]+= temp * b[i][k]
                 }
+
                 c[i][j] = temp;
             }
         }

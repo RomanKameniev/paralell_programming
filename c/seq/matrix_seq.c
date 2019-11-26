@@ -80,6 +80,25 @@ double calculate_kji()
     finish = clock();
     return (double)(finish - start) / CLOCKS_PER_SEC;
 }
+double calculate_ikj()
+{
+    start = clock();
+    int i, j, k;
+    for (i = 0; i < MAX; i++)
+    {
+        for (k = 0; k < MAX; k++)
+        {
+            for (j = 0; j < MAX; j++)
+            {
+                c[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+
+    finish = clock();
+    return (double)(finish - start) / CLOCKS_PER_SEC;
+}
+
 void emptyArr(int64_t arr[MAX][MAX])
 {
     for (int i = 0; i < MAX; i++)
@@ -109,6 +128,10 @@ int main()
         emptyArr(c);
         double kji_time = calculate_kji();
         printf(" kji seq reverse => time of %d iteration is = %lg \n test item of arr=> %I64ld \n", i, kji_time, c[0][0]);
+    emptyArr(c);
+        double ikj_time = calculate_ikj();
+        printf(" ikj seq reverse => time of %d iteration is = %lg \n test item of arr=> %I64ld \n", i, ikj_time, c[0][0]);
+    
     }
     int key;
     printf("End \n");
