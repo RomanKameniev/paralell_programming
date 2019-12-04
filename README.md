@@ -1,6 +1,6 @@
 # paralell_programming
 <head>
-    <h1>C VS Go </h1>
+    <h1>C VS Go VS Node.js </h1>
 </head>
 <body>
     <h4> code was created in VS code </h4>
